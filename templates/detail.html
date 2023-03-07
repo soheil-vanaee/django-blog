@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container p-4">
+        <br><br>
+        <h1 class="text-dark">{{ contentID.title }}</h1>
+        <p>{{ contentID.description }}</p>
+        <p>{{ contentID.body }}</p>
+        <hr>
+        <small class="text-info">{{ contentID.author }} {{ contentID.created_at }}</small>
+    </div>
+{% endblock %}
